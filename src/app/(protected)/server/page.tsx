@@ -1,5 +1,10 @@
 import { ServerPage } from "@/containers";
+import { Suspense } from "react";
 
 export default function ServerScreen() {
-  return <ServerPage />;
+  return (
+    <Suspense>
+      <ServerPage />
+    </Suspense>
+  );
 }

@@ -1,9 +1,11 @@
 "use client";
 
 import { UserInfo } from "@/components";
-import { useCurrentUser } from "@/hooks/use-current-user";
 
-export const ClientPage: React.FC = () => {
-  const user = useCurrentUser();
+type Props = {
+  user: any;
+};
+
+export const ClientPage: React.FC<Props> = ({ user }) => {
   return <UserInfo label="🎮 Client component" user={user} />;
 };

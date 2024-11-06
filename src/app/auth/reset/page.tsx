@@ -1,5 +1,10 @@
 import { Reset } from "@/containers";
+import { Suspense } from "react";
 
 export default function ResetScreen() {
-  return <Reset />;
+  return (
+    <Suspense>
+      <Reset />
+    </Suspense>
+  );
 }
